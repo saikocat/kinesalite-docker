@@ -9,10 +9,11 @@ $ docker build -t saikocat/kinesalite:1.11.5 .
 # Run Instruction
 ```
 $ docker pull saikocat/kinesalite:1.11.5
+# --port 4567 flag must be present, due to expose port
 $ docker run -d \
     -p 4567:4567 \
     --name kinesalite \
-    saikocat/kinesalite-docker:1.11.4 --port 4567
+    saikocat/kinesalite:1.11.5 --port 4567
 ```
 
 ## Runtime Configuration
