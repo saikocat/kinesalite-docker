@@ -1,13 +1,14 @@
 # Introduction
-Small docker container (Alpine based) with service user (`app`) and mountable volume (`/data/kinesalite`) using __[Kinesalite](https://github.com/mhart/kinesalite)__ - by [@mhart](http://www.github.com/mhart)
+Small docker container (Alpine based) with service user (`app`) and mountable volume (`/data/kinesalite`) using __[Kinesalite](https://github.com/mhart/kinesalite)__ - by [@mhart](http://www.github.com/mhart/kinesalite)
 
 # Build Instruction
 ```
-$ docker build -t saikocat/kinesalite-docker:1.11.4 .
+$ docker build -t saikocat/kinesalite:1.11.5 .
 ```
 
 # Run Instruction
 ```
+$ docker pull saikocat/kinesalite:1.11.5
 $ docker run -d \
     -p 4567:4567 \
     --name kinesalite \
