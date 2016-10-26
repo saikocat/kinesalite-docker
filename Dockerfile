@@ -6,7 +6,7 @@ ENV PERSISTENT_DIR=/data/kinesalite
 
 # Install deps
 RUN apk add --update python make g++ \
-	&& npm install --unsafe-perm -g kinesalite \
+	&& npm install --unsafe-perm -g kinesalite@1.11.5 \
 	&& apk del python make g++ \
 	&& rm -rf /tmp/* /var/cache/apk/*
 
